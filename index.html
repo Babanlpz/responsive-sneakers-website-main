@@ -12,7 +12,7 @@
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css">
 
    <!--=============== SWIPER CSS ===============-->
-   <link rel="stylesheet" href="">
+   <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
 
    <!--=============== CSS ===============-->
    <link rel="stylesheet" href="assets/css/styles.css">
@@ -83,21 +83,21 @@
             <div class="home__data">
                <h3 class="home__subtilte">NEW IN</h3>
 
-               <div class="home__titles">
-                  <div>
-                     <div>
+               <div thumbsSlider="" class="home__titles swiper">
+                  <div class="swiper-wrapper">
+                     <div class="swiper-slide">
                         <h1 class="home__title">
                            Yeezy Boost <br> 350 V2 Clay
                         </h1>
                      </div>
 
-                     <div>
+                     <div class="swiper-slide">
                         <h1 class="home__title">
                            Hyperdunk X <br> TB Urban Red
                         </h1>
                      </div>
 
-                     <div>
+                     <div class="swiper-slide">
                         <h1 class="home__title">
                            Air Mag <br> 3000 X1 Future
                         </h1>
@@ -111,9 +111,9 @@
             </div>
 
             <div class="home__images">
-               <div class="home__swiper">
-                  <div>
-                     <article class="home__article">
+               <div class="home__swiper swiper">
+                  <div class="swiper-wrapper">
+                     <article class="home__article swiper-slide">
                         <div class="home__card">
                            <div class="home__circle home__circle-1"></div>
                            <img src="assets/img/sneaker-1.png" alt="image" class="home__img-1">
@@ -121,19 +121,19 @@
                         </div>
                      </article>
 
-                     <article class="home__article">
+                     <article class="home__article swiper-slide">
                         <div class="home__card">
                            <div class="home__circle home__circle-2"></div>
-                           <img src="assets/img/sneaker-3.png" alt="image" class="home__img-3">
-                           <img src="assets/img/sneaker-4.png" alt="image" class="home__img-4">
+                           <img src="assets/img/sneaker-3.png" alt="image" class="home__img-1">
+                           <img src="assets/img/sneaker-4.png" alt="image" class="home__img-2">
                         </div>
                      </article>
 
-                     <article class="home__article">
+                     <article class="home__article swiper-slide">
                         <div class="home__card">
                            <div class="home__circle home__circle-3"></div>
-                           <img src="assets/img/sneaker-5.png" alt="image" class="home__img-5">
-                           <img src="assets/img/sneaker-6.png" alt="image" class="home__img-6">
+                           <img src="assets/img/sneaker-5.png" alt="image" class="home__img-1">
+                           <img src="assets/img/sneaker-6.png" alt="image" class="home__img-2">
                         </div>
                      </article>
                   </div>
@@ -141,20 +141,32 @@
             </div>
 
             <footer class="home__footer">
-               <div class="home__conttrols">
+               <div class="home__controls">
+                  <!-- Pagination -->
+                  <div class="swiper-pagination"></div>
 
+                  <div class="home__navigation">
+                     <!-- Navigation buttons swiper -->
+                     <div class="swiper-button-prev">
+                        <i class="ri-arrow-left-line"></i>
+                     </div>
+
+                     <div class="swiper-button-next">
+                        <i class="ri-arrow-right-line"></i>
+                     </div>
+                  </div>
                </div>
 
                <div class="home__social">
-                  <a href="https://www.facebook.com/" target="_blank" class="home__scial-link">
+                  <a href="https://www.facebook.com/" target="_blank" class="home__social-link">
                      <i class="ri-facebook-circle-line"></i>
                   </a>
 
-                  <a href="https://www.instagram.com/" target="_blank" class="home__scial-link">
+                  <a href="https://www.instagram.com/" target="_blank" class="home__social-link">
                      <i class="ri-instagram-line"></i>
                   </a>
 
-                  <a href="https://twitter.com/" target="_blank" class="home__scial-link">
+                  <a href="https://twitter.com/" target="_blank" class="home__social-link">
                      <i class="ri-twitter-x-line"></i>
                   </a>
                </div>
@@ -164,7 +176,7 @@
    </main>
 
    <!--=============== SWIPER JS ===============-->
-   <script src=""></script>
+   <script src="assets/js/swiper-bundle.min.js"></script>
 
    <!--=============== MAIN JS ===============-->
    <script src="assets/js/main.js"></script>
